@@ -17,17 +17,17 @@
           </header>
           <form action="" id="survey-form">
             <div class="form-group">
-              <p>Which option best describes your current role?</p>
-                <input type="text" name="" id="name" placeholder="Enter your name" required>
+              <label id="name-label" for="name">Name</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
             </div>
             <div class="form-group">
-              <label for="email">emial</label>
-              <input type="email" name="" id="email" placeholder="Enter your email" required>
-          </div>
-          <div class="form-group">
-            <label for="age"> age (optiona)</label>
-            <input type="number" name="" id="age" placeholder="Age">
-        </div>
+              <label id="email-label" for="email">Email</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+            </div>
+            <div class="form-group">
+              <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+              <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+            </div>
         <div class="form-group">
           <label for="option"></label>
           <select id="dropdown" name="role" class="form-control" required="">
