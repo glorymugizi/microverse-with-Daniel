@@ -17,8 +17,9 @@
       </header>
       <form action="" id="survey-form">
         <div class="form-group">
-          <p>Which option best describes your current role?</p>
+         <label for="name" id="name-label">Name</label>
           <input
+            class="form-control"
             type="text"
             name=""
             id="name"
@@ -27,8 +28,9 @@
           />
         </div>
         <div class="form-group">
-          <label for="email">emial</label>
+          <label for="email" id="email-label">email</label>
           <input
+            class="form-control"
             type="email"
             name=""
             id="email"
@@ -37,8 +39,9 @@
           />
         </div>
         <div class="form-group">
-          <label for="age"> age (optiona)</label>
+          <label for="age" id="number-label"> age (optiona)</label>
           <input
+            class="form-control"
             type="number"
             name=""
             id="number"
@@ -48,7 +51,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="option"></label>
+          <p>Which option best describes your current role?</p>
           <select id="dropdown" name="role" class="form-control" required="">
             <option disabled="" selected="" value="">
               Select current role
@@ -62,17 +65,19 @@
         </div>
         <div class="form-group">
           <p>Would you recommend freeCodeCamp to a friend?</p>
-          <label>
-            <input
+          <label
+            ><input
+              class="input-radio"
               name="user-recommend"
-              value="definitely"
+              value="not-sure"
               type="radio"
               class="input-radio"
-              checked=""
-            />Definitely</label
+            />Definiatly</label
           >
+          
           <label>
             <input
+              class="input-radio"
               name="user-recommend"
               value="maybe"
               type="radio"
@@ -82,6 +87,7 @@
 
           <label
             ><input
+              class="input-radio"
               name="user-recommend"
               value="not-sure"
               type="radio"
@@ -112,6 +118,7 @@
 
           <label
             ><input
+             
               name="prefer"
               value="front-end-projects"
               type="checkbox"
@@ -120,6 +127,7 @@
           >
           <label>
             <input
+             
               name="prefer"
               value="back-end-projects"
               type="checkbox"
@@ -128,6 +136,7 @@
           >
           <label
             ><input
+             
               name="prefer"
               value="data-visualization"
               type="checkbox"
@@ -136,6 +145,7 @@
           >
           <label
             ><input
+             
               name="prefer"
               value="challenges"
               type="checkbox"
@@ -144,6 +154,7 @@
           >
           <label
             ><input
+              
               name="prefer"
               value="open-source-community"
               type="checkbox"
@@ -152,6 +163,7 @@
           >
           <label
             ><input
+             
               name="prefer"
               value="gitter-help-rooms"
               type="checkbox"
@@ -160,6 +172,7 @@
           >
           <label
             ><input
+             
               name="prefer"
               value="videos"
               type="checkbox"
@@ -168,6 +181,7 @@
           >
           <label
             ><input
+            
               name="prefer"
               value="city-meetups"
               type="checkbox"
@@ -176,6 +190,7 @@
           >
           <label
             ><input
+             
               name="prefer"
               value="wiki"
               type="checkbox"
@@ -184,6 +199,7 @@
           >
           <label
             ><input
+              
               name="prefer"
               value="forum"
               type="checkbox"
@@ -192,6 +208,7 @@
           >
           <label
             ><input
+             
               name="prefer"
               value="additional-courses"
               type="checkbox"
@@ -203,7 +220,7 @@
           <p>Any comments or suggestions?</p>
           <textarea
             id="comments"
-            class="input-textarea"
+            class="textarea"
             name="comment"
             placeholder="Enter your comment here..."
           ></textarea>
